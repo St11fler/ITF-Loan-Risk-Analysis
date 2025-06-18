@@ -92,7 +92,7 @@ This project is a Business Intelligence solution designed for ITF Group, a non-b
 ## Notes
 - The project includes a sample `loan_data.csv`. Replace it with actual data as needed.
 - MySQL root access is required for initial setup. Update credentials in `scripts/setup_and_test.*` if necessary.
-- The project is hosted on GitHub: [github.com/your-profile/ITF-Loan-Risk-Analysis](https://github.com/st11fler/ITF-Loan-Risk-Analysis).
+- The project is hosted on GitHub: [github.com/St11fler/ITF-Loan-Risk-Analysis](https://github.com/St11fler/ITF-Loan-Risk-Analysis).
 
 ## Contact
 For questions or feedback, please contact STIVAN F. at brixeat@gmail.com.
