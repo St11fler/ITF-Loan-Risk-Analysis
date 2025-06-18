@@ -1,0 +1,31 @@
+-- Create database for ITF Group data warehouse
+CREATE DATABASE IF NOT EXISTS itf_dwh;
+USE itf_dwh;
+
+-- Create loans table to store processed loan data
+CREATE TABLE IF NOT EXISTS loans (
+    loan_id INT PRIMARY KEY,
+    income DECIMAL(10, 2),
+    credit_score INT,
+    loan_amount DECIMAL(10, 2),
+    default_status VARCHAR(10),
+    default_history INT,
+    risk_score DECIMAL(5, 2),
+    INDEX idx_risk (risk_score),
+    INDEX idx_loan_amount (loan_amount),
+    INDEX idx_credit_score (credit_score)
+);
+
+-- Create view for common reporting needs
+CREATE OR REPLACE VIEW loan_risk_summary AS
+SELECT 
+    FLOOR(risk_score / 10) * 10 AS risk_bucket,
+    COUNT(*) AS loan_count,
+    AVG(loan_amount) AS avg_loan_amount,
+    AVG(credit_score) AS avg_credit_score
+FROM loans
+GROUP BY risk_bucket
+ORDER BY risk_bucket DESC;
+
+-- Sample query for business insights
+SELECT * FROM loan_risk_summary LIMIT 10;

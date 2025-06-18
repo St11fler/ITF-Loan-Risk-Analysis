@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+env/
+.venv/
+
+# IDEs
+.idea/
+.vscode/
+
+# Logs and temporary files
+*.log
+dashboard.log
+dashboard_err.log
+*.bak
+
+# Outputs (can be regenerated)
+outputs/loan_summary.csv
+outputs/loan_dashboard.png
+
+# Test data
+data/test_*.csv

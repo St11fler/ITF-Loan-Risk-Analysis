@@ -1,0 +1,4 @@
+loan_id,income,credit_score,loan_amount,default_status
+1,50000,700,10000,No
+2,30000,600,15000,Yes
+3,45000,650,12000,No

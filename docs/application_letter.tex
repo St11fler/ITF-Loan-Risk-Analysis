@@ -1,0 +1,70 @@
+% Preparing the LaTeX preamble with essential packages
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+\usepackage{parskip}
+\setlength{\parindent}{0pt}
+
+% Setting the font to DejaVu Sans for a professional look
+\usepackage{dejavu}
+
+\begin{document}
+
+% Header with applicant details
+\begin{flushright}
+[Your Full Name] \\
+[Your Email] \\
+[Your Phone] \\
+June 19, 2025
+\end{flushright}
+
+% Recipient
+\begin{flushleft}
+ITF Group Hiring Team \\
+[Company Address, if known] \\
+\end{flushleft}
+
+% Subject
+\textbf{Subject}: Application for Business Intelligence Developer Position
+
+% Salutation
+Dear ITF Group Hiring Team,
+
+% Body
+I am excited to apply for the Business Intelligence Developer position at ITF Group, a company whose mission to deliver modern and smart financial services resonates deeply with my passion for leveraging technology to drive business value. With a strong foundation in ETL processes, MySQL, Python, and data visualization, coupled with a commitment to analytical excellence, I am eager to contribute to your team’s efforts in scaling and analyzing your consumer loan portfolio.
+
+To demonstrate my qualifications, I have developed a proof-of-concept project tailored to ITF Group’s needs: a Consumer Loan Risk Analysis System. This project, available at \url{https://github.com/your-profile/ITF-Loan-Risk-Analysis}, includes:
+
+\begin{itemize}
+    \item \textbf{ETL Pipeline}: A Python-based pipeline that extracts loan data from CSV, transforms it (cleaning and risk scoring), and loads it into a MySQL data warehouse.
+    \item \textbf{Risk Scoring Model}: A statistical model calculating risk scores based on credit score, income, loan amount, and default history, normalized for decision-making.
+    \item \textbf{Reporting \& Visualization}: Static dashboards with matplotlib and an interactive web-based dashboard using Dash, providing insights into risk distribution and loan metrics.
+    \item \textbf{MySQL Data Warehouse}: An optimized schema with indexes and views for efficient querying.
+    \item \textbf{Automation}: Universal setup scripts for Linux, macOS, and Windows, automating dependency installation, MySQL configuration, and testing with pytest.
+\end{itemize}
+
+To optimize and accelerate development, I utilized AI tools, with all solutions carefully reviewed, customized, and tested by me to ensure alignment with ITF Group’s requirements and high quality standards. This project showcases my expertise in:
+
+\begin{itemize}
+    \item \textbf{Essential Requirements}: Deep understanding of ETL and DWH concepts, proficiency in MySQL, analytical thinking, and Excel compatibility (via CSV exports).
+    \item \textbf{Advantages}: Extensive experience with ETL pipelines, data visualization (matplotlib, Dash), statistical modeling, and Python programming.
+    \item \textbf{Personal Qualities}: Attention to detail (error handling, testing), problem-solving (modular code design), and teamwork (clear documentation, reusable components).
+\end{itemize}
+
+My eagerness to learn and ownership mindset drive me to deliver high-quality solutions that align with business needs. I am particularly drawn to ITF Group’s flat team structure and focus on innovation, which I believe will allow me to thrive while collaborating with your Business, Risk, and Development teams to build impactful reporting systems and scoring models.
+
+I would welcome the opportunity to discuss how my skills and this project can support ITF Group’s mission. Please find my resume attached for your review. I am available at your convenience for an interview and can be reached at [Your Email] or [Your Phone].
+
+Thank you for considering my application. I look forward to the possibility of contributing to ITF Group’s success.
+
+% Closing
+Sincerely, \\
+[Your Full Name] \\
+GitHub: \url{https://github.com/your-profile} \\
+Attachment: Resume
+
+\end{document}
